@@ -542,6 +542,246 @@ ul{
 }
 
 
+/* ===== صفحه های داخلی ===== */
+
+/* سرتیتر بالای هر صفحه */
+.page-head{
+  margin-top:20px;
+  background-color:#3e2528;
+  color:white;
+  border-radius:20px;
+  padding:35px 20px;
+  text-align:center;
+}
+.page-head h1{
+  font-size:30px;
+}
+.page-head h1 .icon{
+  width:34px;
+  height:34px;
+}
+.page-head p{
+  color:#dddddd;
+  font-size:15px;
+  margin-top:8px;
+}
+
+/* باکسی که تنهایی توی یه ردیفه */
+.section{
+  margin-top:20px;
+}
+.center{
+  text-align:center;
+}
+
+/* متن های بلند */
+.text{
+  font-size:15px;
+  line-height:2.1;
+  text-align:justify;
+}
+.text p{
+  margin-bottom:10px;
+}
+
+/* معرفی: متن یه طرف، عکس یه طرف */
+.intro{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+.intro-text{
+  flex:1;
+}
+.intro-text h2{
+  font-size:24px;
+  color:#5a2f34;
+  margin-bottom:12px;
+}
+.intro-img{
+  width:40%;
+  height:300px;
+  object-fit:cover;
+  border-radius:16px;
+}
+
+/* کارت ها ۳ تا تو هر ردیف */
+.cards{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:15px;
+}
+.card{
+  background-color:#f3f0f0;
+  border-radius:16px;
+  padding:22px 18px;
+  text-align:center;
+}
+.card img{
+  width:40px;
+  height:40px;
+}
+.card h4{
+  font-size:16px;
+  margin:10px 0 6px;
+}
+.card p{
+  font-size:13px;
+  color:#555555;
+  line-height:1.9;
+  margin-bottom:12px;
+}
+
+/* لیست با آیکون کنار هر خط */
+.check-list li{
+  font-size:15px;
+  padding:9px 0;
+  border-bottom:1px dashed #e3dede;
+}
+.check-list img{
+  width:20px;
+  height:20px;
+  vertical-align:middle;
+  margin-left:8px;
+}
+
+
+/* ===== صفحه اطلاعیه ها ===== */
+.elan-item{
+  border:1px solid #e3dede;
+  border-right:5px solid #5a2f34;
+  border-radius:12px;
+  padding:16px 18px;
+  margin-bottom:14px;
+}
+.elan-item h4{
+  font-size:16px;
+}
+.elan-item p{
+  font-size:14px;
+  color:#555555;
+  line-height:1.9;
+  margin:6px 0;
+}
+.elan-item small{
+  font-size:12px;
+  color:#777777;
+}
+.elan-item small img{
+  width:15px;
+  height:15px;
+  vertical-align:middle;
+}
+/* برچسب کنار عنوان */
+.tag{
+  display:inline-block;
+  background-color:#5a2f34;
+  color:white;
+  font-size:11px;
+  padding:2px 10px;
+  border-radius:10px;
+  margin-right:8px;
+  vertical-align:middle;
+}
+.tag-light{
+  background-color:#e6dcdd;
+  color:#4a2c2f;
+}
+
+
+/* ===== صفحه گالری ===== */
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:15px;
+}
+.pic{
+  background-color:#f3f0f0;
+  border-radius:14px;
+  overflow:hidden;
+}
+.pic img{
+  display:block;
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+.pic:hover img{
+  opacity:0.85;
+}
+.pic p{
+  padding:10px;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+}
+
+
+/* ===== صفحه سوالات متداول ===== */
+/* details و summary خودشون باز و بسته میشن، نیازی به جاوااسکریپت نیست */
+details{
+  background-color:#f3f0f0;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+summary{
+  padding:16px 18px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+}
+details[open] summary{
+  color:#7a4148;
+}
+details p{
+  padding:0 18px 16px;
+  font-size:14px;
+  line-height:2;
+  color:#555555;
+}
+
+
+/* ===== صفحه به زودی ===== */
+.soon{
+  margin-top:20px;
+  background-color:white;
+  border-radius:20px;
+  padding:60px 20px;
+  text-align:center;
+}
+.soon img{
+  width:90px;
+  height:90px;
+}
+.soon h1{
+  font-size:34px;
+  color:#5a2f34;
+  margin:15px 0 10px;
+}
+.soon p{
+  font-size:16px;
+  color:#555555;
+  line-height:2;
+  margin-bottom:20px;
+}
+/* نوار پیشرفت ساخت */
+.progress{
+  width:260px;
+  max-width:100%;
+  height:10px;
+  background-color:#f3f0f0;
+  border-radius:10px;
+  margin:0 auto 25px;
+  overflow:hidden;
+}
+.progress span{
+  display:block;
+  width:70%;
+  height:100%;
+  background-color:#5a2f34;
+}
+
+
 /*  منوی موبایل (از بغل باز میشه)  */
 @media (max-width:1050px){
 
@@ -640,6 +880,21 @@ ul{
   .login-pic{
     display:none;
   }
+
+  /* صفحه های داخلی */
+  .intro{
+    flex-direction:column;
+  }
+  .intro-img{
+    width:100%;
+    height:230px;
+  }
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+  .gallery{
+    grid-template-columns:1fr 1fr;
+  }
 }
 
 
@@ -723,5 +978,35 @@ ul{
     text-align:center;
     padding:15px;
     font-size:13px;
+  }
+
+  /* صفحه های داخلی */
+  .page-head{
+    padding:25px 15px;
+  }
+  .page-head h1{
+    font-size:23px;
+  }
+  .page-head h1 .icon{
+    width:26px;
+    height:26px;
+  }
+  .intro-img{
+    height:180px;
+  }
+  .cards{
+    grid-template-columns:1fr;
+  }
+  .pic img{
+    height:130px;
+  }
+  .pic p{
+    font-size:12px;
+  }
+  .soon h1{
+    font-size:26px;
+  }
+  .soon p{
+    font-size:14px;
   }
 }
