@@ -8,7 +8,7 @@
 var header = `
 <header class="header">
   <a href="index.html" class="logo">
-    <img src="./assets/img/icons/white/book.svg" class="icon" alt="">
+    <img src="./assets/img/logo-white.svg" class="icon" alt="">
     <p>هنرستان <br>نیکان کاوه بناب</p>
   </a>
 
@@ -48,7 +48,7 @@ var header = `
 var footer = `
 <footer class="footer">
   <div class="logo">
-    <img src="./assets/img/icons/white/book.svg" class="icon" alt="">
+    <img src="./assets/img/logo-white.svg" class="icon" alt="">
     <p>هنرستان <br>نیکان کاوه بناب<br><small>آموزش، فناوری، موفقیت</small></p>
   </div>
   <div class="footer-links">

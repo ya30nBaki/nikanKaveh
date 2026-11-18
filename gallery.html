@@ -24,43 +24,54 @@
 <!-- TODO (مدیر سایت): عکس های واقعی را با همین اسم ها توی پوشه assets/img/gallery بگذارید -->
 <div class="box section gallery">
   <div class="pic">
-    <img src="./assets/img/gallery/1.jpg" alt="کارگاه کامپیوتر">
+    <img loading="lazy" src="./assets/img/gallery/1.jpg" alt="کارگاه کامپیوتر">
     <p>کارگاه کامپیوتر</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/2.jpg" alt="کلاس برنامه‌نویسی">
+    <img loading="lazy" src="./assets/img/gallery/2.jpg" alt="کلاس برنامه‌نویسی">
     <p>کلاس برنامه‌نویسی</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/3.jpg" alt="کارگاه شبکه">
+    <img loading="lazy" src="./assets/img/gallery/3.jpg" alt="کارگاه شبکه">
     <p>کارگاه شبکه</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/4.jpg" alt="کارگاه الکترونیک">
+    <img loading="lazy" src="./assets/img/gallery/4.jpg" alt="کارگاه الکترونیک">
     <p>کارگاه الکترونیک</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/5.jpg" alt="کارگاه مکانیک">
+    <img loading="lazy" src="./assets/img/gallery/5.jpg" alt="کارگاه مکانیک">
     <p>کارگاه مکانیک</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/6.jpg" alt="کارگاه ماشین ابزار">
+    <img loading="lazy" src="./assets/img/gallery/6.jpg" alt="کارگاه ماشین ابزار">
     <p>کارگاه ماشین ابزار</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/7.jpg" alt="جشن شروع سال تحصیلی">
+    <img loading="lazy" src="./assets/img/gallery/7.jpg" alt="جشن شروع سال تحصیلی">
     <p>جشن شروع سال تحصیلی</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/8.jpg" alt="مسابقه برنامه‌نویسی">
+    <img loading="lazy" src="./assets/img/gallery/8.jpg" alt="مسابقه برنامه‌نویسی">
     <p>مسابقه برنامه‌نویسی</p>
   </div>
   <div class="pic">
-    <img src="./assets/img/gallery/9.jpg" alt="بازدید علمی">
+    <img loading="lazy" src="./assets/img/gallery/9.jpg" alt="بازدید علمی">
     <p>بازدید علمی</p>
   </div>
 </div>
 
+
+<!-- نمایش بزرگ عکس -->
+<div class="gallery-view" id="gallery-view" aria-hidden="true">
+  <button class="gallery-close" id="gallery-close" aria-label="بستن">×</button>
+  <button class="gallery-prev" id="gallery-prev" aria-label="تصویر قبلی">›</button>
+  <div class="gallery-content">
+    <img id="gallery-large" src="" alt="">
+    <p id="gallery-caption"></p>
+  </div>
+  <button class="gallery-next" id="gallery-next" aria-label="تصویر بعدی">‹</button>
+</div>
 
 <!-- فوتر (از فایل assets/js/header-footer.js میاد) -->
 <div id="footer"></div>
@@ -68,5 +79,6 @@
 </div>
 
 <script src="./assets/js/header-footer.js"></script>
+<script src="./assets/js/gallery.js"></script>
 </body>
 </html>
